@@ -1,7 +1,10 @@
 Project::Application.routes.draw do
+<<<<<<< HEAD
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+=======
+>>>>>>> 11899b1257664103b72f7dbdd0d02de9574d2e13
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
