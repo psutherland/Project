@@ -7,7 +7,6 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-<<<<<<< HEAD
 #ActiveAdmin
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
@@ -16,8 +15,7 @@ gem 'jquery-ui-rails'
 #CountrySelect
 gem 'country-select'
 
-=======
->>>>>>> 11899b1257664103b72f7dbdd0d02de9574d2e13
+
 
 # Gems used only for assets and not required
 # in production environments by default.
