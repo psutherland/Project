@@ -1,0 +1,12 @@
+class CreateComicOrders < ActiveRecord::Migration
+  def change
+    create_table :comic_orders do |t|
+      t.integer :quantity
+      t.decimal :price
+      t.integer :comic_id
+      t.integer :order_id
+
+      t.timestamps
+    end
+  end
+end
