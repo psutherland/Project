@@ -1,0 +1,19 @@
+<div id="container">
+	
+	<%= render "banner" %>
+	<%= render "navlist" %>
+
+	<div id="content">		
+		<%= render "menu" %>
+
+		<div id="info">
+			<% @comics.each do |comic| %>
+				<%= render comic %>
+			<% end %> 
+		</div>
+
+	</div>
+
+	<%= render "footer" %>
+
+</div>

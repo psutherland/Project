@@ -1,3 +1,35 @@
 // Place all the styles related to the comics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.comic {
+	width: 150px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px 0px;
+	display: inline-table;
+}
+
+.comic img {
+	display: block;
+	width: 100px;
+	height: 125px;
+	border: 1px solid black;
+	margin: 5px auto;
+}
+
+.comic h4 {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	font-size: 10pt;
+}
+
+.comic .price {
+	font-size: 8pt;
+	display: block;
+	text-align: center;
+	margin: 2px auto;
+}
