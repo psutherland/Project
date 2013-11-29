@@ -1,0 +1,23 @@
+<div id="container">
+	
+	<%= render "banner" %>
+	<%= render "navlist" %>
+
+	<div id="content">		
+		<%= render "menu" %>
+
+		<div id="info">
+
+			<h1><%= @comic.name %></h1>
+			<%= image_tag(@comic.url, :class => "show_image") %>
+			<p><b>Description:</b><%= @comic.description %></p>
+			<p><b>Price:</b><%= @comic.price %></p>
+			<p><b>Stock Quantity:</b><%= @comic.stock_quantity %></p>
+			
+		</div>
+
+	</div>
+
+	<%= render "footer" %>
+
+</div>

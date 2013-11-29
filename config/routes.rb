@@ -1,5 +1,6 @@
 Project::Application.routes.draw do
 
+  root :to => "Application#index", :via => :get
 
   get "comic_orders/index"
 
@@ -13,8 +14,12 @@ Project::Application.routes.draw do
 
   get "comics/new"
 
+  match "comics/:id" => "comics#show", :as => "comic_page", :via => :get
+  match "comics/search/:publisher" => "comics#search_publisher", :as => "search_publisher_page", :via => :get
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

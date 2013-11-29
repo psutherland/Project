@@ -1,3 +1,16 @@
 <div id="menu">
+	
+	<b>Publisher</b>
+	<ul>
+		<li><%= link_to "Marvel", search_publisher_page_path(:publisher => "Marvel") %></li>
+		<li><%= link_to "DC Comics", search_publisher_page_path(:publisher => "DC Comics") %></li>
+	</ul>
+
+	<b>Price</b>
+	<ul>
+		<li>Less than $10</li>
+		<li>Between $10 - $20</li>
+		<li>Greater than $20</li>
+	</ul>
 
 </div>
