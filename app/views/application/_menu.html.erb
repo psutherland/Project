@@ -8,7 +8,7 @@
 
 	<b>Price</b>
 	<ul>
-		<li>Less than $10</li>
+		<li><%= link_to "Less than $10", search_price_page_path(:price => "less than 10") %></li>
 		<li>Between $10 - $20</li>
 		<li>Greater than $20</li>
 	</ul>

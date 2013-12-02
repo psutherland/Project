@@ -14,4 +14,11 @@ class ComicsController < ApplicationController
   	@comics = Comic.where(:publisher => pub)
   end
 
+  def search_price
+    if params[:price] = "less than 10" then
+      search_string = "price < 10"
+    end
+    @comics = Comic.where(search_string)
+  end
+
 end

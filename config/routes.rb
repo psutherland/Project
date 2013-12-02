@@ -16,6 +16,8 @@ Project::Application.routes.draw do
 
   match "comics/:id" => "comics#show", :as => "comic_page", :via => :get
   match "comics/search/:publisher" => "comics#search_publisher", :as => "search_publisher_page", :via => :get
+  match "comics/search/:price" => "comics#search_price", :as => "search_price_page", :via => :get 
+  match "comics/search" => "Application#search", :as => "search_comics", :via => :post
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
