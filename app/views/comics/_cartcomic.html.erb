@@ -1,0 +1,8 @@
+<div class="cartcomic">
+	<%= image_tag(comic.url) %>
+	<h4><%= link_to comic.name, comic_page_path(comic) %></h4>
+	<span class="price"><b>Publisher: </b><%= comic.publisher %></span>
+	<span class="price"><b>Price: </b><%= comic.price %></span>
+
+	<p><%= link_to "Remove from cart", remove_item_path(:comic => comic.id) %></p>
+</div>

@@ -7,8 +7,10 @@
 		<%= render "menu" %>
 
 		<div id="info">
+			<p>Number of Items: <%= session[:cart].count %></p>
+			<p>Cart Total: <%= number_to_currency(session[:total]) %></p>
 			<% @comics.each do |comic| %>
-				<%= render comic %>
+				<%= render :partial => "comics/cartcomic", :object => comic, :as => "comic" %>
 			<% end %> 
 		</div>
 

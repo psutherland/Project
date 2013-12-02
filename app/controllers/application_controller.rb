@@ -2,9 +2,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   def index
-  	session[:total] = 0
-  	session[:items] = 0
-  	session[:cart] = []
+  	if session[:total].nil?
+  		session[:total] = 0
+  	end
+  	if session[:cart].nil?
+  		session[:cart] = []
+  	end
 
   	@comics = Comic.order("name")
   end
