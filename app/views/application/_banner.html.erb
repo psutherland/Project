@@ -1,6 +1,8 @@
 <div id="banner">
-	<div id="cart">
-		<b>Total: </b><%= number_to_currency(session[:total]) %><br/>
-		<b>Items: </b><%= session[:items] %>
-	</div>
+	<%= link_to "/cart", :class => "cart" do %>
+		<section id="cart">
+			<b>Total: </b><%= number_to_currency(session[:total]) %><br/>
+			<b>Items: </b><%= session[:items] %>
+		</section>
+	<% end %>
 </div>

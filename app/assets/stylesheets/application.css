@@ -35,6 +35,16 @@
  	border: 1px dashed black;
  	text-align: left;
  	padding: 7px 0px 0px 7px;
+ 	text-decoration: none;
+ }
+
+ #banner .cart {
+ 	text-decoration: none;
+ 	color: black;
+ }
+
+ #banner #cart:hover {
+ 	background-color: yellow;
  }
 
  #nav { 	
