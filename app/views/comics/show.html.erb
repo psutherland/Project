@@ -13,8 +13,7 @@
 			<p><b>Description:</b><%= @comic.description %></p>
 			<p><b>Price:</b><%= @comic.price %></p>
 			<p><b>Stock Quantity:</b><%= @comic.stock_quantity %></p>
-			<%= link_to "Add to cart", add_item_path(:comic => @comic.id) %>
-			
+			<%= link_to "Add to cart", add_item_path(:comic => @comic.id) %>			
 			
 		</div>
 

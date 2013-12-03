@@ -1,5 +1,9 @@
 Project::Application.routes.draw do
 
+  get "checkout/index"
+
+  get "checkout/calculate"
+
   root :to => "Application#index", :via => :get
 
   get "comic_orders/index"
@@ -20,9 +24,12 @@ Project::Application.routes.draw do
   match "comics/search" => "Application#search", :as => "search_comics", :via => :post
 
   match "cart" => "Application#cart", :via => :get
+  match "cart/add" => "comics#add", :as => "add_item"
+  match "cart/remove" => "comics#remove", :as => "remove_item"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
 
 
   # The priority is based upon order of creation:
