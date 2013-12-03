@@ -1,2 +1,23 @@
-<h1>Checkout#calculate</h1>
-<p>Find me in app/views/checkout/calculate.html.erb</p>
+<div id="container">
+	
+	<%= render "banner" %>
+	<%= render "navlist" %>
+
+	<div id="content">		
+		<%= render "menu" %>
+
+		<div id="info">
+			
+			<h3>Checkout</h3>
+
+			<p><b>Subotal: </b><%= number_to_currency(@total) %></p>
+			<p><b>Taxes: </b><%= number_to_currency(@taxes) %></p>
+			<p><b>Total: </b><%= number_to_currency(@taxes + @total) %></p>
+
+		</div>
+
+	</div>
+
+	<%= render "footer" %>
+
+</div>

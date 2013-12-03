@@ -7,5 +7,10 @@ class CheckoutController < ApplicationController
   end
 
   def calculate
+  	#@id = params[:province_id]
+  	tax = 0.1
+  	@total = session[:total]
+  	@items = session[:cart]
+  	@taxes = @total * tax
   end
 end
