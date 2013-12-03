@@ -22,8 +22,14 @@
  #banner {
  	width: inherit;
  	height: 150px;
- 	background-color: grey;
+ 	background-color: #266499;
  	position: relative;
+ }
+
+ #banner img {
+ 	height: 140px;
+ 	width: 600px;
+ 	margin-left: 40px;
  }
 
  #banner #cart {
@@ -36,6 +42,7 @@
  	text-align: left;
  	padding: 7px 0px 0px 7px;
  	text-decoration: none;
+ 	background-color: #ED9C2D;
  }
 
  #banner .cart {
@@ -49,7 +56,7 @@
 
  #nav { 	
  	height: 40px;
- 	background-color: lightgrey;
+ 	background-color: #ED9C2D;
  	border-bottom: 1px solid black;
  	position: relative;
  }
@@ -84,9 +91,14 @@
 
 #menu {
 	width: 140px;
-	height: auto;
+	height: inherit;
 	float: left;
 	padding: 20px 0px 0px 5px;
+}
+
+#menu .list_header {
+	font-weight: bold;
+	font-size: 14pt;
 }
 
 #menu b {
@@ -120,7 +132,7 @@
 #footer {
  	width: inherit;
  	height: 50px;
- 	background-color: lightgrey;
+ 	background-color: #266499;
  	clear: both;
  	border-top: 1px solid black;
  }
