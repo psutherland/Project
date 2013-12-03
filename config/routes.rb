@@ -26,6 +26,7 @@ Project::Application.routes.draw do
   match "cart" => "Application#cart", :via => :get
   match "cart/add" => "comics#add", :as => "add_item"
   match "cart/remove" => "comics#remove", :as => "remove_item"
+  match "cart/checkout" => "checkout#index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

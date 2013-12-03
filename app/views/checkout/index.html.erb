@@ -1,2 +1,24 @@
-<h1>Checkout#index</h1>
-<p>Find me in app/views/checkout/index.html.erb</p>
+<div id="container">
+	
+	<%= render "banner" %>
+	<%= render "navlist" %>
+
+	<div id="content">		
+		<%= render "menu" %>
+
+		<div id="info">
+			
+			<h3>Checkout</h3>
+
+			<%= render "info" %>
+
+			<p><b>Checkout Total: </b><%= number_to_currency(@total) %></p>
+			<p><b>Checkout Total: </b><%= :selected %></p>
+
+		</div>
+
+	</div>
+
+	<%= render "footer" %>
+
+</div>

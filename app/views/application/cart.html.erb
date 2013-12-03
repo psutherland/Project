@@ -12,6 +12,8 @@
 			<% @comics.each do |comic| %>
 				<%= render :partial => "comics/cartcomic", :object => comic, :as => "comic" %>
 			<% end %> 
+
+			<%= link_to "Checkout", "/cart/checkout" %>
 		</div>
 
 	</div>
