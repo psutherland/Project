@@ -33,16 +33,17 @@
  }
 
  #banner #cart {
- 	height: 50px;
+ 	height: 60px;
  	width: 100px;
  	position: absolute;
  	top: 15px;
  	right: 15px;
  	border: 1px dashed black;
  	text-align: left;
- 	padding: 7px 0px 0px 7px;
+ 	padding: 1px;
  	text-decoration: none;
  	background-color: #ED9C2D;
+ 	text-align: center;
  }
 
  #banner .cart {

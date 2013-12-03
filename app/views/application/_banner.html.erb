@@ -2,6 +2,7 @@
 	<%= image_tag("banner.jpg") %>
 	<%= link_to "/cart", :class => "cart" do %>
 		<section id="cart">
+			<b>Cart</b><br/>
 			<b>Total: </b><%= number_to_currency(session[:total]) %><br/>
 			<b>Items: </b><%= session[:cart].count %>
 		</section>
