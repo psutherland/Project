@@ -146,4 +146,12 @@
  	background-color: #266499;
  	clear: both;
  	border-top: 1px solid black;
+ 	text-align: right;
+ 		
+ }
+
+ #footer p {
+ 	margin-right: 20px;
+ 	color: white; 
+ 	font-size: 14pt;
  }
