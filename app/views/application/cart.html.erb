@@ -13,7 +13,11 @@
 				<%= render :partial => "comics/cartcomic", :object => comic, :as => "comic" %>
 			<% end %> 
 
-			<%= link_to "Checkout", "/cart/checkout" %>
+			<% if session[:cart].count == 0 then %>
+				<p>You have no items in your cart</p>
+			<% else %>
+				<%= link_to "Checkout", "/cart/checkout" %>
+			<% end %>
 		</div>
 
 	</div>
