@@ -94,16 +94,18 @@
 	width: 140px;
 	height: inherit;
 	float: left;
-	padding: 20px 0px 0px 5px;
+	padding: 0px;
 }
 
 #menu .list_header {
 	font-weight: bold;
 	font-size: 14pt;
+	background-color: #ED9C2D;
+	color: black;
 }
 
-#menu b {
-
+#menu a {
+	color: white;
 }
 
 #menu ul {
@@ -113,6 +115,14 @@
 
 #menu li {
 	list-style: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 142px;
+	padding: 4px;
+	margin: 0px;
+	text-align: center;
+	background-color: #266499;
+	color: white
 }
 
 #info {
